@@ -1,0 +1,215 @@
+header{
+    font-size:xx-large;
+    font-family:cursive;
+    font-weight:bold;
+   color:rgb(211, 129, 6);
+    text-align: center;
+    background-color: rgb(242, 250, 215);
+     border-style: solid;
+     border-top-color:black;
+     border-bottom-color:black;
+     border-right-color:whitesmoke;
+     border-left-color:whitesmoke;
+    border-radius: 12px;
+    border-width: 12pt;
+    padding: 7px;
+    box-shadow: 5px 5px rgb(241, 239, 239);    
+   
+}
+
+
+body{
+    background-color:rgba(223, 226, 33, 0.753);  
+  
+}
+
+img{
+    border-style: solid;
+    border-width: 3.9pt;
+    border-color: rgba(68, 75, 3, 0.651);
+    padding: 7px;
+    box-shadow: 3px 3px black; 
+    opacity:0.8;
+
+}
+
+div{
+    margin: 40pt;
+    font-size:large;
+
+}
+
+
+
+
+a{
+  
+    font-style: normal;
+    font-weight: bold;
+    font-family: cursive;
+  color: rgb(51, 116, 78);
+  margin:120px;
+ 
+}
+
+header:hover{
+    color: purple;
+    font-family: cursive;
+   
+    background-color: pink
+}
+
+footer{
+    border-radius: 30px;
+    border-width: 10px;
+    border-style: ridge;
+    border-color:blanchedalmond;
+    background-color: bisque;
+    color:rgba(rgb(228, 173, 56), rgba(96, 226, 96, 0.76), rgb(125, 125, 214), 0.3);
+    font-family: cursive;
+    text-align: center;
+}
+
+#lst1{
+    background-color: aquamarine;
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+#lst2{
+    background-color: rgb(255, 214, 127);
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+
+#lst3{
+    background-color: aqua;
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+
+
+#lst4{
+    background-color: rgb(236, 233, 33);
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+
+
+#lst5{
+    background-color: rgb(187, 163, 30);
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+
+
+#lst6{
+    background-color: rgb(122, 243, 122);
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+
+
+#lst7{
+    background-color: rgb(150, 193, 233);
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+
+
+#lst8{
+    background-color: rgb(157, 134, 240);
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+
+
+#lst9{
+    background-color: rgb(243, 147, 195);
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px;
+   
+}
+
+
+#lst10{
+    background-color: rgb(241, 120, 120);
+    margin-right:900px;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+   padding:40px
+}
+
+
+
+
+a:hover{
+    color:rgb(243, 83, 136);
+    font-size: 40px;
+}
+
+img:hover{
+    width:300px;
+    height:300px;
+    border-color:palevioletred;
+    border-style: dashed;
+    border-width: 15px;
+    
+}
+
+
+footer:hover{
+    color:blueviolet;
+    background-color: aqua;
+    font-size: xx-large;
+    font-family: cursive;
+}
+
+ul{
+    margin:100px;
+    
+}
+
+body:hover{
+    background-color: rgba(191, 226, 151, 0.918);
+}
+
+
+ul li:hover{
+    background-color: rgb(198, 221, 136);
+    box-shadow:8px 8px rgba(19, 18, 18, 0.76);
+   
+    
+}
+a{
+    text-shadow:0.6px 1px rgb(180, 26, 52);
+}
+
+

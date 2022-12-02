@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;background-color: aquamarine;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        input[type=email]
+        {
+            width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;  
+        }
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+        input[type=reset] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=reset]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+          border: solid black 10px;
+        }
+        h3{
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+  <a href="form.php">PROCESSED FORM</a>
+    <h3>Contact Form</h3><br><br>
+
+    <div class="container">
+      <form  onsubmit="confirmInput()" action="index.html" onreset="message()" name="myForm"  method="POST">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname"  placeholder="Your name.."  onblur="myFunction()">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname"  placeholder="Your last name.."  onblur="myFunction()">
+        <label>Date of birth</label><br>         
+
+        <input type="date" value="date" name="date" required/><br><br>
+        <label for="Comapnies">Comapnies: </label> <br>
+              <input type="checkbox" required/>Service based <br> 
+              <input type="checkbox" />Product based <br/>  
+              <input type="checkbox" />Unicorn Startup <br> 
+             
+              <br>
+              <label for="gender">Place: </label> <br>
+                        <input type="radio" value="city" id="cityr" name="city"/>City <br> 
+                        <input type="radio" value="village" id="vilage" name="villager"/>Village <br/>  
+                        <br>
+        <br/>
+        <label>E-mail</label> <br/>
+        <input type="email" name="email"></input><br/>
+
+        <br>
+        
+        
+        <br>
+        <br/>
+        <label for="country">Country</label>
+        
+        <select id="country" name="country" onchange="f()">
+            <option value="india">India</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Bio</label>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" onfocus="f1(this)" onselect="f2()" ></textarea>
+        Choose your gender:
+        <select id="genders" onchange="preferedGender()">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Other</option>
+          </select>
+    
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+      </form>
+      <p id="para"></p>
+    </div>
+</body>
+<script>
+   function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+  x = document.getElementById("lname");
+  x.value = x.value.toUpperCase();
+}
+function preferedGender() {
+  prefer = document.forms[0].genders.value;
+  alert("Your gender is " + prefer);
+}
+function f1(x)
+{
+    x.style.background = "green";
+    x.style.color="white";
+    
+ 
+}
+function f()
+{
+  alert("changed something");
+}
+function message() {
+  alert("This is now cleared");
+}
+function f2()
+{
+    var x=document.getElementById("para").innerHTML="you selected something";
+    alert(x);
+}
+
+function confirmInput() {
+  fname = document.forms[0].fname.value;
+  alert("Hello " + fname  + "! You will now be redirected to Home page");
+}
+
+
+
+</script>
+</html>

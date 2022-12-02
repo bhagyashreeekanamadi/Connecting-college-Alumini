@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Bldeacet</title>
+  <style>
+    #clg{
+      margin-top: 100px;
+      margin-left: 100px;
+      margin-bottom: 100px;
+      border: dotted rgb(3, 73, 3) 5px;
+      box-shadow: 5px 5px brown;
+      float:left;
+    
+    }
+    #lib{
+      margin-top:100px;
+      margin-left:100px;
+      margin-bottom: 100px;
+      border: dotted rgb(3, 73, 3) 5px;
+      box-shadow: 5px 5px brown;
+      
+    }
+    #news{
+      margin-top:100px;
+      margin-left:70px;
+      margin-bottom: 100px;
+    float:left;
+      border: dotted rgb(3, 73, 3) 5px;
+      box-shadow: 5px 5px brown;
+      /*border-image: url(imgs/border.jpg) 50 stretch;*/
+     
+    }
+    body{
+      margin-top:10px;
+      margin-bottom:10px;
+    background-color: greenyellow;
+      
+      border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(imgs/border.jpg) 30 round;
+     
+    }
+
+h1{
+  font-family: cursive;
+  text-decoration: underline;
+  text-align: center;
+  font-style: italic;
+  font-size: xx-large;
+}
+h2{
+  padding-left:30px;
+  padding-right: 30px;
+  font-family: cursive;
+}
+    #button{
+      height:70px;
+      width:180px;
+      border:solid black 5px;
+      border-radius:16px;
+      background-color: palevioletred;
+      font-family: cursive;
+      font-size: larger;
+      font-weight: bolder;
+      margin-left:900px;
+      cursor: pointer;
+      position: relative;
+    }
+    #heading{
+      background-color: blueviolet;
+    }
+   
+  </style>
+</head>
+<body>
+  <h1 id="heading"></h1>
+  
+  <img src="imgs/news.jpeg" width="500px" height="500px" id="news" onclick="f1()" onmouseover="f2(this)"  onmouseout="f4(this)" ondblclick="f5()" />
+  <img src="imgs/about.jpeg" width="500px" height="500px" id="clg" onclick="f1()"  onmousemove="f3(this)" ondblclick="f6(this)"/>
+  <img src="imgs/library.jpeg" width="500px" height="500px" id="lib"  onclick="f1()" onmouseover="f2(this)" onmouseout="f4(this)" ondblclick="f7()"/>
+
+  <h2 id="newspaper" onmouseup="func1(this)" onmousedown="func2(this)"></h2><br>
+  <h2 id="bldecet_clg" onmouseup="func1(this)" onmousedown="func2(this)"></h2><br><br>
+  <h2 id="library" onmouseup="func1(this)" onmousedown="func2(this)"></h2>
+  <br><br>
+  <footer>
+    <form action="form.php">
+      <input type="submit" value="Contact us" id="button"/>
+    </form>
+  </footer>
+
+</body>
+
+<script>
+  function f1()
+  {
+    document.getElementById("heading").innerHTML="WELCOME  TO  BLDEACET";
+  }
+
+  function f2(x)
+  {
+x.style.border="solid white 10px"; 
+x.style.height="700px";
+
+
+  }
+
+  function f3(x)
+  {
+    x.style.opacity="0.6";
+  }
+  function f4(x)
+  {
+    x.style.border="double black 5px";
+    x.style.height="400px";
+  }
+
+  function f5()
+  {
+    document.getElementById("newspaper").innerHTML="The mentoring system has been introduced with the main objective of providing supportive care and counsel to students in their academic and personal problems, from time to time, if any. This system helps the students to complete their studies comfortably and successfully. The mentoring system is used to continuously and regularly to monitor the academic progress of the students and to rectify their problems.";
+  }
+
+  function f6(x){
+    x.style.height="400px";
+    document.getElementById("bldecet_clg").innerHTML="Spread over 14.6 acres of lush green and picturesque campus comprises of numerous buildings providing space for administrative & academic facilities and for extra-curricular activities.  With this excellent infrastructure, BLDEACET provides the best opportunity for overall development of the students.BLDEACET has more than 2500 students on campus. Students can avail numerous resources in the campus such as library (open beyond regular working hours), WiFi services. Excellent indoor and outdoor sports facilities are available for student usage. Doctor on call service is provided for hostel students. Annual sports and cultural events are organized in the campus.As part of AICTE and VTU mandatory activities, students need to participate in social activities. The objective of these activities is to sensitize and make students socially responsible. The NSS cell of the college organize many events (Swachh Abhiyan, Blood donation camp, Literacy camps etc.). Students are also encouraged to visit rural areas and slums in urban areas to understand the social life, their problems and provide solutions";
+  }
+
+  function f7()
+  {
+document.getElementById("library").innerHTML="Library at BLDEA’ sCET Vijayapur is the window to the world of latest information in sciences, engineering, technology, humanities & social sciences. Being an integral part of academic and research work on the campus, Library provides information services to support the teaching, learning, research and outreach activities of the Institute by creating state-of-the-art facilities and offering innovative services. Keeping users at the center of its activities, Library has been actively engaged in designing and delivering need based information services.";
+  }
+  function func1(x){
+x.style.color="red";
+  }
+  function func2(x)
+  {
+    x.style.color="green";
+  }
+
+</script>
+</html>
